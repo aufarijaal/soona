@@ -1,0 +1,108 @@
+<div class="min-h-screen bg-[#F8F9FA] flex flex-col">
+  <!-- Top Navigation -->
+  <nav class="p-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between">
+        <a routerLink="/" class="text-2xl font-bold text-emerald-600">Soona</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full">
+      <!-- Sign In Header -->
+      <div class="text-center">
+        <h2 class="mt-6 text-3xl font-bold tracking-tight text-gray-900">
+          Welcome Back
+        </h2>
+        <p class="mt-2 text-sm text-gray-600">
+          "He who comes to Me walking, I will come to him running"
+          <span class="block mt-1 text-xs text-gray-500">(Hadith Qudsi)</span>
+        </p>
+      </div>
+
+      <!-- Sign In Card -->
+      <div class="mt-8">
+        <div class="bg-white py-8 px-4 shadow-sm rounded-lg sm:px-10">
+          <!-- Sign In Options -->
+          <div class="space-y-6">
+            <!-- Google Sign In -->
+            <button
+              class="w-full flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md text-emerald-600 bg-emerald-50 hover:bg-emerald-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+            >
+              <svg class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12C5,7.9 8.2,4.73 12.2,4.73C15.29,4.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2 12.1,2C6.42,2 2.03,6.8 2.03,12C2.03,17.05 6.16,22 12.25,22C17.6,22 21.5,18.33 21.5,12.91C21.5,11.76 21.35,11.1 21.35,11.1V11.1Z"
+                />
+              </svg>
+              Continue with Google
+            </button>
+
+            <!-- Email Sign In (Placeholder for future) -->
+            <div class="mt-6">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                  <span class="px-2 bg-white text-gray-500">Or continue with email</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                <div class="mt-1">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button
+                  class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+                >
+                  Send magic link
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Privacy Note -->
+          <div class="mt-6">
+            <p class="text-xs text-center text-gray-500">
+              By continuing, you agree to Soona's Terms of Service and Privacy Policy
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Links -->
+      <div class="mt-6 text-center">
+        <p class="text-sm text-gray-600">
+          New to Soona?
+          <a routerLink="/" class="font-medium text-emerald-600 hover:text-emerald-500">
+            Start your journey here
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Quote -->
+  <div class="py-8 text-center">
+    <p class="text-sm text-gray-500">
+      "The best among you is the one who learns and teaches the Quran"
+      <span class="block mt-1 text-xs">(Sahih al-Bukhari)</span>
+    </p>
+  </div>
+</div>
